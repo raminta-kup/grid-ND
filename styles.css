@@ -118,22 +118,27 @@ section {
     grid-area: pic1;
     max-width: 100%;
     object-fit: cover;
+    min-height: 100%;
 
 }
 .pic2 {
     grid-area: pic2;
     max-width: 100%;
     object-fit: cover;
+    min-height: 100%;
 }
 .pic3 {
     grid-area: pic4;
     max-width: 100%;
     object-fit: cover;
+    min-height: 100%;
 }
 .pic4 {
     grid-area: pic3;
     max-width: 100%;
     object-fit: cover;
+    background-size: cover;
+    background-image: url('img/1749x2639x2.jpg');
 }
 
 footer {
