@@ -1,0 +1,189 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #efefef;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 16px 20px;
+    background-color: white;
+    box-shadow: 0 8px 2px -4px rgba(0, 0, 0, 0.034);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    margin: 0 40px 40px 40px;
+    display: flex;
+    gap: 24px;
+}
+
+main {
+    width: 60%;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-areas:
+        "photo photo photo"
+        "photo photo photo"
+        "pic1 pic2 pic3"
+        "text1 text2 text3";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.gallery-container img:nth-child(1) {
+    grid-area: photo;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.gallery-container img:nth-child(2) {
+    grid-area: pic1;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.gallery-container img:nth-child(3) {
+    grid-area: pic2;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.gallery-container img:nth-child(4) {
+    grid-area: pic3;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.gallery-container p:nth-child(1) {
+    grid-area: text1;
+}
+
+.gallery-container p:nth-child(2) {
+    grid-area: text2;
+}
+
+.gallery-container p:nth-child(3) {
+    grid-area: text3;
+}
+
+section {
+    width: 40%;
+    display: grid;
+    grid-template-areas:
+        "text1 text1"
+        "pic1 pic2"
+        "text2 text3"
+        "text2 pic3"
+        "pic4 pic3";
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+}
+.p1 {
+    grid-area: text1;
+    max-width: 100%;
+}
+.p2 {
+    grid-area: text2;
+    max-width: 100%;
+}
+.p3 {
+    grid-area: text3;
+    max-width: 100%;
+}
+.pic1 {
+    grid-area: pic1;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+.pic2 {
+    grid-area: pic2;
+    max-width: 100%;
+    object-fit: cover;
+}
+.pic3 {
+    grid-area: pic4;
+    max-width: 100%;
+    object-fit: cover;
+}
+.pic4 {
+    grid-area: pic3;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 16px 0;
+    background-color: white;
+}
+
+
+
+/* grid-template-areas:
+"taxt text"
+"taxt text"
+"photo photo"
+"text text"
+"text pic1"
+"pic2 pic1"; */
+
+
+/* Sitas veikia */
+/* .gallery-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 170px);
+    gap: 16px;
+}
+
+.gallery-container img:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 1 /4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-container img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-container img:nth-child(3) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-container img:nth-child(4) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-container div {
+
+} */
