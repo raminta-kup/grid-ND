@@ -1,6 +1,9 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #efefef;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -30,7 +33,40 @@ nav {
 a {
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    padding: 8px;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+
+.nav-list a,
+.nav-list a:after,
+.nav-list a:before {
+    transition: all .5s;
+}
+
+a:hover {
+    color: #555;
 }
 
 .wrapper {
@@ -152,9 +188,13 @@ footer {
     text-align: center;
     padding: 16px 0;
     background-color: white;
+    margin-top: auto;
 }
 
 @media only screen and (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
     .wrapper {
         flex-direction: column;
     }
